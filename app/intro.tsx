@@ -24,7 +24,7 @@ export default function IntroScreen() {
         autoPlay
         loop
       />
-      <Text>Tencere</Text>
+      <Text style={styles.brand}>Tencere</Text>
     </View>
   );
 }
@@ -34,9 +34,19 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#FAFAF8'
   },
   lottie: {
-    width: 200,
-    height: 200,
+    width: 300,
+    height: 300,
+    marginBottom: 24,
+  },
+  brand: {
+    fontFamily: 'google-sans',
+    fontSize: 32,
+    letterSpacing: 1.2,
+    color: '#1A1A1A',
+    position: 'absolute',
+    bottom: 50
   },
 });
